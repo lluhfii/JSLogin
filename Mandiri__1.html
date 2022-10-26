@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandiri_1_Lutfi-Alfian</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const title = document.createElement("title");
+const heading = document.createElement("h1");
+const inputUsername = document.createElement("input");
+const inputPassword = document.createElement("input");
+const buttonLogin = document.createElement("button");
+
+inputUsername.setAttribute("name", "username");
+inputUsername.setAttribute("type", "text");
+inputUsername.setAttribute("placeholder", "Username");
+
+inputPassword.setAttribute("name", "password");
+inputPassword.setAttribute("type", "password");
+inputPassword.setAttribute("placeholder", "Password");
+
+buttonLogin.setAttribute("type", "submit");
+buttonLogin.addEventListener("click", function() {
+    alert("Berhasil login");
+});
+
+title.appendChild(document.createTextNode("Pertemuan 01 Pemograman Javascript"));
+buttonLogin.appendChild(document.createTextNode("Login"));
+heading.appendChild(document.createTextNode("Silahkan isi data data berikut untuk login :D"));
+
+document.head.appendChild(title);
+document.body.appendChild(heading);
+document.body.appendChild(inputUsername);
+document.body.appendChild(inputPassword);
+document.body.appendChild(buttonLogin);
+</script>
+</html>
